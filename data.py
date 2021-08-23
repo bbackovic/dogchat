@@ -14,7 +14,15 @@ comment2 = {
     "DateTime": datetime(2021, 7, 1, 19, 30, 0),
     "Picture": "Dog1.jpg"
 }
+comment3 = {
+    "Text" : "You bet!",
+    "Name" : "Fluffy",
+    "Username": "fluffy",
+    "DateTime": datetime(2021, 7, 1, 21, 30, 0),
+    "Picture": "doggy.jpg"
+}
 post1 = {
+        "PostID": 1,
         "Text": "I can't wait to go to the park today!",
         "Name": "Cloud", 
         "Username": "cloud",
@@ -24,6 +32,7 @@ post1 = {
         "Picture": 'Dog1.jpg'
     }
 post2 = {
+        "PostID": 2,
         "Text": "Me too! Can I join in?",
         "Name": "Fluffy", 
         "Username": "fluffy",
@@ -33,13 +42,18 @@ post2 = {
         "Picture": 'doggy.jpg'
     }
 post3 = {
+        "PostID": 3,
         "Text": "Yes! Ruff ruff",
         "Name": "Cloud", 
         "Username": "cloud",
         "Likes": ["fluffy"], 
-        "Comments": [],
+        "Comments": [comment3],
         "DateTime": datetime(2021, 7, 1, 20, 30, 0),
         "Picture": 'Dog1.jpg'
     }
     
-test_posts = [post1, post2, post3]
+test_posts = {
+    1 : post1,
+    2 : post2, 
+    3 : post3
+}
